@@ -5,10 +5,8 @@ D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\WinFormsApp3_second_project.pdb
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\Emgu.CV.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\Emgu.CV.Bitmap.dll
-D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\Emgu.CV.UI.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\MathNet.Numerics.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\Microsoft.Win32.SystemEvents.dll
-D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\OpenCvSharp.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\System.Drawing.Common.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\System.Private.Windows.Core.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
@@ -45,10 +43,6 @@ D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\runtimes\win-x86\native\msvcp140_codecvt_ids.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\runtimes\win-x86\native\vcruntime140.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\runtimes\win-x64\native\OpenCvSharpExtern.dll
-D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\runtimes\win-x64\native\opencv_videoio_ffmpeg4110_64.dll
-D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\runtimes\win-x86\native\OpenCvSharpExtern.dll
-D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\runtimes\win-x86\native\opencv_videoio_ffmpeg4110.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\obj\Debug\net8.0-windows\WinFormsApp3_second_project.csproj.AssemblyReference.cache
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\obj\Debug\net8.0-windows\WinFormsApp3_second_project.Form1.resources
@@ -63,3 +57,11 @@ D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\obj\Debug\net8.0-windows\WinFormsApp3_second_project.pdb
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\obj\Debug\net8.0-windows\WinFormsApp3_second_project.genruntimeconfig.cache
 D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\obj\Debug\net8.0-windows\ref\WinFormsApp3_second_project.dll
+D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\obj\Debug\net8.0-windows\WinFormsApp3_second_project.sourcelink.json
+D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\NAudio.dll
+D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\NAudio.Asio.dll
+D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\NAudio.Core.dll
+D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\NAudio.Midi.dll
+D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\NAudio.Wasapi.dll
+D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\NAudio.WinForms.dll
+D:\multi media projects\WinFormsApp3_second_project\WinFormsApp3_second_project\bin\Debug\net8.0-windows\NAudio.WinMM.dll

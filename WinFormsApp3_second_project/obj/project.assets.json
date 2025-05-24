@@ -77,27 +77,6 @@
           }
         }
       },
-      "Emgu.CV.UI/4.10.0.5680": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV": "4.10.0.5680",
-          "Emgu.CV.Bitmap": "4.10.0.5680",
-          "System.Drawing.Common": "9.0.0"
-        },
-        "compile": {
-          "lib/net5.0-windows7.0/Emgu.CV.UI.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net5.0-windows7.0/Emgu.CV.UI.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
-      },
       "Emgu.runtime.windows.msvc.rt.arm64/19.42.34435": {
         "type": "package",
         "runtimeTargets": {
@@ -218,7 +197,7 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/1.1.1": {
+      "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -234,6 +213,33 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.Registry/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "Microsoft.Win32.SystemEvents/9.0.0": {
@@ -258,51 +264,123 @@
           }
         }
       },
-      "OpenCvSharp4/4.11.0.20250507": {
+      "NAudio/2.2.1": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.6.3"
+          "NAudio.Asio": "2.2.1",
+          "NAudio.Core": "2.2.1",
+          "NAudio.Midi": "2.2.1",
+          "NAudio.Wasapi": "2.2.1",
+          "NAudio.WinForms": "2.2.1",
+          "NAudio.WinMM": "2.2.1"
         },
         "compile": {
-          "lib/net6.0/OpenCvSharp.dll": {
+          "lib/net6.0-windows7.0/NAudio.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/OpenCvSharp.dll": {
+          "lib/net6.0-windows7.0/NAudio.dll": {
             "related": ".xml"
           }
         }
       },
-      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+      "NAudio.Asio/2.2.1": {
         "type": "package",
-        "build": {
-          "build/net5.0/OpenCvSharp4.runtime.win.props": {}
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "NAudio.Core": "2.2.1"
         },
-        "runtimeTargets": {
-          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
+        "compile": {
+          "lib/netstandard2.0/NAudio.Asio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Asio.dll": {
+            "related": ".xml"
           }
         }
       },
-      "OpenCvSharp4.Windows/4.11.0.20250507": {
+      "NAudio.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NAudio.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NAudio.Midi/2.2.1": {
         "type": "package",
         "dependencies": {
-          "OpenCvSharp4": "4.11.0.20250507",
-          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
+          "NAudio.Core": "2.2.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NAudio.Midi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Midi.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NAudio.Wasapi/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NAudio.Core": "2.2.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NAudio.Wasapi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Wasapi.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NAudio.WinForms/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NAudio.WinMM": "2.2.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/NAudio.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/NAudio.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "NAudio.WinMM/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "NAudio.Core": "2.2.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NAudio.WinMM.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.WinMM.dll": {
+            "related": ".xml"
+          }
         }
       },
       "runtime.native.System/4.3.0": {
@@ -398,15 +476,6 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Memory/4.6.3": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Reflection/4.3.0": {
@@ -541,6 +610,52 @@
             "rid": "unix"
           },
           "runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -692,26 +807,6 @@
         "runtimes/win-x86/native/opencv_videoio_ffmpeg4100.dll"
       ]
     },
-    "Emgu.CV.UI/4.10.0.5680": {
-      "sha512": "hz/q2jcUKWNRP9ZrwneHNi9h3Kq9Wu6LDEYp5Ug2ziZI+2CUwc44z5X7u+zENDqLpa6Ey4BuZ3PAMjhICjA7QQ==",
-      "type": "package",
-      "path": "emgu.cv.ui/4.10.0.5680",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "docs/README.md",
-        "emgu.cv.ui.4.10.0.5680.nupkg.sha512",
-        "emgu.cv.ui.nuspec",
-        "lib/net472/Emgu.CV.UI.dll",
-        "lib/net472/Emgu.CV.UI.xml",
-        "lib/net5.0-windows7.0/Emgu.CV.UI.dll",
-        "lib/net5.0-windows7.0/Emgu.CV.UI.xml",
-        "lib/netcoreapp3.1/Emgu.CV.UI.dll",
-        "lib/netcoreapp3.1/Emgu.CV.UI.xml",
-        "nuget_icon.png"
-      ]
-    },
     "Emgu.runtime.windows.msvc.rt.arm64/19.42.34435": {
       "sha512": "tb+JdhPLkX0MsMweKhL8zY/XUm+opxl6FLP7fyMf93EqUrUmR3YAyxmzcTyDyndh4XQ4bl+Eain9ugm7y/e26g==",
       "type": "package",
@@ -796,19 +891,21 @@
         "mathnet.numerics.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/1.1.1": {
-      "sha512": "TMBuzAHpTenGbGgk0SMTwyEkyijY/Eae4ZGsFNYJvAr/LDn1ku3Etp3FPxChmDp5HHF3kzJuoaa08N0xjqAJfQ==",
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/1.1.1",
+      "path": "microsoft.netcore.platforms/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.1.1.1.nupkg.sha512",
+        "microsoft.netcore.platforms.3.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
-        "runtime.json"
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.NETCore.Targets/1.1.3": {
@@ -824,6 +921,53 @@
         "microsoft.netcore.targets.1.1.3.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.Win32.Registry/4.7.0": {
+      "sha512": "KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
+      "type": "package",
+      "path": "microsoft.win32.registry/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/Microsoft.Win32.Registry.dll",
+        "lib/net461/Microsoft.Win32.Registry.dll",
+        "lib/net461/Microsoft.Win32.Registry.xml",
+        "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "lib/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "microsoft.win32.registry.4.7.0.nupkg.sha512",
+        "microsoft.win32.registry.nuspec",
+        "ref/net46/Microsoft.Win32.Registry.dll",
+        "ref/net461/Microsoft.Win32.Registry.dll",
+        "ref/net461/Microsoft.Win32.Registry.xml",
+        "ref/net472/Microsoft.Win32.Registry.dll",
+        "ref/net472/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "ref/netstandard1.3/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/de/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/es/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/fr/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/it/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ja/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ko/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ru/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/zh-hans/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/zh-hant/Microsoft.Win32.Registry.xml",
+        "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "ref/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/net461/Microsoft.Win32.Registry.xml",
+        "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Win32.SystemEvents/9.0.0": {
@@ -858,53 +1002,114 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "OpenCvSharp4/4.11.0.20250507": {
-      "sha512": "j/R+G6xGC5IV2wGRU0/GF5qG/FrP+Uxp8dmNnXFlIdiw8Gfo4mtvKcBOBfS/bn4pP/7FNHLFX/xvMtgPJeDjAA==",
+    "NAudio/2.2.1": {
+      "sha512": "c0DzwiyyklM0TP39Y7RObwO3QkWecgM6H60ikiEnsV/aEAJPbj5MFCLaD8BSfKuZe0HGuh9GRGWWlJmSxDc9MA==",
       "type": "package",
-      "path": "opencvsharp4/4.11.0.20250507",
+      "path": "naudio/2.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net48/OpenCvSharp.dll",
-        "lib/net48/OpenCvSharp.xml",
-        "lib/net6.0/OpenCvSharp.dll",
-        "lib/net6.0/OpenCvSharp.xml",
-        "lib/netstandard2.0/OpenCvSharp.dll",
-        "lib/netstandard2.0/OpenCvSharp.xml",
-        "lib/netstandard2.1/OpenCvSharp.dll",
-        "lib/netstandard2.1/OpenCvSharp.xml",
-        "opencvsharp4.4.11.0.20250507.nupkg.sha512",
-        "opencvsharp4.nuspec"
+        "lib/net472/NAudio.dll",
+        "lib/net472/NAudio.xml",
+        "lib/net6.0-windows7.0/NAudio.dll",
+        "lib/net6.0-windows7.0/NAudio.xml",
+        "lib/net6.0/NAudio.dll",
+        "lib/net6.0/NAudio.xml",
+        "lib/netcoreapp3.1/NAudio.dll",
+        "lib/netcoreapp3.1/NAudio.xml",
+        "license.txt",
+        "naudio-icon.png",
+        "naudio.2.2.1.nupkg.sha512",
+        "naudio.nuspec"
       ]
     },
-    "OpenCvSharp4.runtime.win/4.11.0.20250507": {
-      "sha512": "3PxMXyzR+pkL9UOx2PiBjZm+/iyCIu5D6OlA1sq9MH7oWrfvVnCXJlUYhIJv67F7SLUwUuGwXDIQBfdsL/54lg==",
+    "NAudio.Asio/2.2.1": {
+      "sha512": "hQglyOT5iT3XuGpBP8ZG0+aoqwRfidHjTNehpoWwX0g6KJEgtH2VaqM2nuJ2mheKZa/IBqB4YQTZVvrIapzfOA==",
       "type": "package",
-      "path": "opencvsharp4.runtime.win/4.11.0.20250507",
+      "path": "naudio.asio/2.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/net48/OpenCvSharp4.runtime.win.props",
-        "build/net5.0/OpenCvSharp4.runtime.win.props",
-        "build/netcoreapp/OpenCvSharp4.runtime.win.props",
-        "build/netstandard/OpenCvSharp4.runtime.win.props",
-        "opencvsharp4.runtime.win.4.11.0.20250507.nupkg.sha512",
-        "opencvsharp4.runtime.win.nuspec",
-        "runtimes/win-x64/native/OpenCvSharpExtern.dll",
-        "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll",
-        "runtimes/win-x86/native/OpenCvSharpExtern.dll",
-        "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll"
+        "lib/netstandard2.0/NAudio.Asio.dll",
+        "lib/netstandard2.0/NAudio.Asio.xml",
+        "naudio-icon.png",
+        "naudio.asio.2.2.1.nupkg.sha512",
+        "naudio.asio.nuspec"
       ]
     },
-    "OpenCvSharp4.Windows/4.11.0.20250507": {
-      "sha512": "Vwbvv8mkK9L8kbaTpQyiguuVj7+2wbXVM2FJkJjsfEIjXjSvzt5mWX/yfYJA6aPH0Mn89FwlBtHo84Cl143C7g==",
+    "NAudio.Core/2.2.1": {
+      "sha512": "GgkdP6K/7FqXFo7uHvoqGZTJvW4z8g2IffhOO4JHaLzKCdDOUEzVKtveoZkCuUX8eV2HAINqi7VFqlFndrnz/g==",
       "type": "package",
-      "path": "opencvsharp4.windows/4.11.0.20250507",
+      "path": "naudio.core/2.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "opencvsharp4.windows.4.11.0.20250507.nupkg.sha512",
-        "opencvsharp4.windows.nuspec"
+        "lib/netstandard2.0/NAudio.Core.dll",
+        "lib/netstandard2.0/NAudio.Core.xml",
+        "naudio-icon.png",
+        "naudio.core.2.2.1.nupkg.sha512",
+        "naudio.core.nuspec"
+      ]
+    },
+    "NAudio.Midi/2.2.1": {
+      "sha512": "6r23ylGo5aeP02WFXsPquz0T0hFJWyh+7t++tz19tc3Kr38NHm+Z9j+FiAv+xkH8tZqXJqus9Q8p6u7bidIgbw==",
+      "type": "package",
+      "path": "naudio.midi/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NAudio.Midi.dll",
+        "lib/netstandard2.0/NAudio.Midi.xml",
+        "naudio-icon.png",
+        "naudio.midi.2.2.1.nupkg.sha512",
+        "naudio.midi.nuspec"
+      ]
+    },
+    "NAudio.Wasapi/2.2.1": {
+      "sha512": "lFfXoqacZZe0WqNChJgGYI+XV/n/61LzPHT3C1CJp4khoxeo2sziyX5wzNYWeCMNbsWxFvT3b3iXeY1UYjBhZw==",
+      "type": "package",
+      "path": "naudio.wasapi/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NAudio.Wasapi.dll",
+        "lib/netstandard2.0/NAudio.Wasapi.xml",
+        "lib/uap10.0.18362/NAudio.Wasapi.dll",
+        "lib/uap10.0.18362/NAudio.Wasapi.pri",
+        "lib/uap10.0.18362/NAudio.Wasapi.xml",
+        "naudio-icon.png",
+        "naudio.wasapi.2.2.1.nupkg.sha512",
+        "naudio.wasapi.nuspec"
+      ]
+    },
+    "NAudio.WinForms/2.2.1": {
+      "sha512": "DlDkewY1myY0A+3NrYRJD+MZhZV0yy1mNF6dckB27IQ9XCs/My5Ip8BZcoSHOsaPSe2GAjvoaDnk6N9w8xTv7w==",
+      "type": "package",
+      "path": "naudio.winforms/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/NAudio.WinForms.dll",
+        "lib/net472/NAudio.WinForms.xml",
+        "lib/netcoreapp3.1/NAudio.WinForms.dll",
+        "lib/netcoreapp3.1/NAudio.WinForms.xml",
+        "naudio-icon.png",
+        "naudio.winforms.2.2.1.nupkg.sha512",
+        "naudio.winforms.nuspec"
+      ]
+    },
+    "NAudio.WinMM/2.2.1": {
+      "sha512": "xFHRFwH4x6aq3IxRbewvO33ugJRvZFEOfO62i7uQJRUNW2cnu6BeBTHUS0JD5KBucZbHZaYqxQG8dwZ47ezQuQ==",
+      "type": "package",
+      "path": "naudio.winmm/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NAudio.WinMM.dll",
+        "lib/netstandard2.0/NAudio.WinMM.xml",
+        "naudio-icon.png",
+        "naudio.winmm.2.2.1.nupkg.sha512",
+        "naudio.winmm.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -1167,27 +1372,6 @@
         "system.io.pipelines.9.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Memory/4.6.3": {
-      "sha512": "qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
-      "type": "package",
-      "path": "system.memory/4.6.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "buildTransitive/net461/System.Memory.targets",
-        "buildTransitive/net462/_._",
-        "lib/net462/System.Memory.dll",
-        "lib/net462/System.Memory.xml",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "lib/netstandard2.1/_._",
-        "system.memory.4.6.3.nupkg.sha512",
-        "system.memory.nuspec"
       ]
     },
     "System.Reflection/4.3.0": {
@@ -1781,6 +1965,106 @@
         "system.runtime.interopservices.runtimeinformation.nuspec"
       ]
     },
+    "System.Security.AccessControl/4.7.0": {
+      "sha512": "JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "type": "package",
+      "path": "system.security.accesscontrol/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.xml",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.4.7.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "sha512": "ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "type": "package",
+      "path": "system.security.principal.windows/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.4.7.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Text.Encoding/4.3.0": {
       "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "type": "package",
@@ -2095,10 +2379,10 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Emgu.CV >= 4.10.0.5680",
-      "Emgu.CV.UI >= 4.10.0.5680",
+      "Emgu.CV.Bitmap >= 4.10.0.5680",
       "Emgu.CV.runtime.windows >= 4.10.0.5680",
       "MathNet.Numerics >= 5.0.0",
-      "OpenCvSharp4.Windows >= 4.11.0.20250507"
+      "NAudio >= 2.2.1"
     ]
   },
   "packageFolders": {
@@ -2155,7 +2439,7 @@
             "target": "Package",
             "version": "[4.10.0.5680, )"
           },
-          "Emgu.CV.UI": {
+          "Emgu.CV.Bitmap": {
             "target": "Package",
             "version": "[4.10.0.5680, )"
           },
@@ -2167,9 +2451,9 @@
             "target": "Package",
             "version": "[5.0.0, )"
           },
-          "OpenCvSharp4.Windows": {
+          "NAudio": {
             "target": "Package",
-            "version": "[4.11.0.20250507, )"
+            "version": "[2.2.1, )"
           }
         },
         "imports": [

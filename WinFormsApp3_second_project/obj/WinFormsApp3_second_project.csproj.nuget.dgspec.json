@@ -54,7 +54,7 @@
               "target": "Package",
               "version": "[4.10.0.5680, )"
             },
-            "Emgu.CV.UI": {
+            "Emgu.CV.Bitmap": {
               "target": "Package",
               "version": "[4.10.0.5680, )"
             },
@@ -66,9 +66,9 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
-            "OpenCvSharp4.Windows": {
+            "NAudio": {
               "target": "Package",
-              "version": "[4.11.0.20250507, )"
+              "version": "[2.2.1, )"
             }
           },
           "imports": [
